@@ -43,10 +43,12 @@
                 </div>
                 <div class="mb-5">
                      <label for="imagetype" class="block mb-2 font-bold text-gray-600 ">Image Type</label>
-                     <input type="text" id="imgtype" name="imgtype" placeholder="Choose Image Type" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
+                     <select name="imgtype" id="imgtype" placeholder="Choose Image Type" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
+                        <option value="png">PNG</option>
+                        <option value="gif">GIF</option>
+                        <option value="jpeg">JPEG</option>
+                    </select>
                 </div>
-
-
                 {{-- <div class="mb-5">
                     <label for="width" class="block mb-2 font-bold text-gray-600 ">Image format</label>
                     <select name="" id="" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
