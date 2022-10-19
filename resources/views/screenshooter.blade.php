@@ -47,7 +47,7 @@
                         <option value="">Choose an option</option>
                         <option value="png">PNG</option>
                         <option value="gif">GIF</option>
-                        <option value="jpeg">JPEG</option>
+                        <option value="svg">SVG</option>
                     </select>
                 </div>
                 {{-- <div class="mb-5">

@@ -55,7 +55,7 @@ class screenshotController extends Controller
             //creates a unique key
             $filename = Str::uuid();
 
-            $fullPath = "image/$filename" . ".$imgtype";
+            $fullPath = "image/$filename" . "." . "$imgtype";
 
             $name = $filename;
 
