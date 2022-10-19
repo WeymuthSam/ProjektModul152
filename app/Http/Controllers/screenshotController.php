@@ -35,6 +35,7 @@ class screenshotController extends Controller
         $name = $request->input('name');
         $width = (int)$request->input('width');
         $height = (int)$request->input('height');
+        $imgtype = $request->input('imgtype');
 
         try {
 
@@ -51,8 +52,10 @@ class screenshotController extends Controller
             Log::info('Puppetheer done.');
 
             $image = base64_decode($screenshot);
+            //creates a unique key
             $filename = Str::uuid();
-            $fullPath = "image/$filename.png";
+
+            $fullPath = "image/$filename" . ".$imgtype";
 
             $name = $filename;
 
