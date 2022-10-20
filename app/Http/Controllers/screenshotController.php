@@ -46,7 +46,7 @@ class screenshotController extends Controller
             $page = $browser->newPage();
             $page->tryCatch->goto($url);
             $page->setViewport(['width' => $width, 'height' => $height]);
-            $screenshot = $page->screenshot(['encoding' => 'base64', 'type' => 'png']);
+            $screenshot = $page->screenshot(['encoding' => 'base64', 'type' => $imgtype]);
             $browser->close();
 
             Log::info('Puppetheer done.');
