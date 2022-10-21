@@ -42,8 +42,8 @@
                      <select name="imgtype" id="imgtype" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
                         <option value="">Choose an option</option>
                         <option value="png">PNG</option>
-                        <option value="gif">GIF</option>
-                        <option value="svg">SVG</option>
+                        <option value="jpeg">JPEG</option>
+                        <option value="webp">Webp</option>
                     </select>
                 </div>
                 <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded ">Take a screenshot</button>
