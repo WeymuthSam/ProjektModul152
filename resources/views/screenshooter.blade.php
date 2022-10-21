@@ -24,10 +24,6 @@
             <form method="POST" action="/screenshooter/create">
                 @csrf
                 <div class="mb-5">
-                    <label for="name" class="block mb-2 font-bold text-gray-600 ">Image name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter name" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
-                </div>
-                <div class="mb-5">
                     <label for="url" class="block mb-2 font-bold text-gray-600 ">Website URL</label>
                     <input type="text" id="url" name="url" placeholder="Enter URL" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
                 </div>

@@ -25,8 +25,6 @@ Route::get('/screenshooter', [screenshotController::class, 'index']);
 Route::post('/screenshooter/create', [screenshotController::class, 'createScreenshot']);
 
 Route::get('/gallery', [galleryController::class, 'index']);
-Route::get('/api-documentation', [apiDocuController::class, 'index']);
-
 Route::post('/download-image', [galleryController::class, 'downloadImage']);
 Route::post('/delete-image', [galleryController::class, 'deleteImage']);
 Route::post('/convert-to-ascii', [galleryController::class, 'imageToAscii']);

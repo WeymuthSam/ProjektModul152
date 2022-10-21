@@ -12,7 +12,6 @@
     <div class="flex justify-center mt-10">
         <a href="/screenshooter" class="font-mono underline underline-offset-4 decoration-2 decoration-wavy decoration-pink-500 mr-10">Screenshooter</a>
         <a href="/gallery" class="font-mono underline underline-offset-4 decoration-2 decoration-wavy decoration-pink-500 mr-10">Image gallery <span>&#8674;</span></a>
-        <a href="/api-documentation" class="font-mono underline underline-offset-4 decoration-2 decoration-wavy decoration-pink-500">API Documentation</a>
     </div>
 </header>
 
