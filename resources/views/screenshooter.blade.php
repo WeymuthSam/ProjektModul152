@@ -46,12 +46,6 @@
                         <option value="svg">SVG</option>
                     </select>
                 </div>
-                {{-- <div class="mb-5">
-                    <label for="width" class="block mb-2 font-bold text-gray-600 ">Image format</label>
-                    <select name="" id="" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
-                        <option value="" default>Select an option...</option>
-                    </select>
-                </div> --}}
                 <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded ">Take a screenshot</button>
             </form>
         </div>
@@ -61,7 +55,7 @@
             <img src="{{ $url }}" alt="Image can not be loaded">
             <a href="{{$url ?? '#'}}" target="_blank" class="block w-full bg-blue-500 text-white font-bold p-4 rounded mt-4 text-center">See in new tab</a>
         @else
-            <p class="text-blue-700">No image found to be downloaded!</p>
+            <p class="text-blue-700">No image created yet!</p>
         @endif
 
         </div>

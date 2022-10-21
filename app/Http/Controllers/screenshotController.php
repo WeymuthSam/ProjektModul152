@@ -12,9 +12,15 @@ use Illuminate\Support\Str;
 class screenshotController extends Controller
 {
 
+    /**
+     * When /screenshooter route has been called
+     * it will run the function below and will return
+     * the screenshooter.blade.view
+     */
     public function index()
     {
         try {
+            //Instance variables 
             $name = "";
             $error = "";
 
@@ -69,7 +75,7 @@ class screenshotController extends Controller
 
         } catch (Node\Exception $exception) {
 
-            $error = "Something went wrong :(";
+            $error = "Something went wrong. The url might be invalid. :(";
 
             Log::critical('Screenshot/Puppetheer failed!');
 
