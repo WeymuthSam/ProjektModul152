@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="mb-5">
-                     <label for="imagetype" class="block mb-2 font-bold text-gray-600 ">Image Type</label>
+                     <label for="imgtype" class="block mb-2 font-bold text-gray-600 ">Image Type</label>
                      <select name="imgtype" id="imgtype" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
                         <option value="">Choose an option</option>
                         <option value="png">PNG</option>
