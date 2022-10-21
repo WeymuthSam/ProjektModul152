@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
+/**
+ * First parameter is what has to be given in the url
+ * Second parameter is what controller will be accessed
+ * Third parameter is which function will be called
+ */
 Route::get('/', [screenshotController::class, 'index']);
 Route::get('/screenshooter', [screenshotController::class, 'index']);
 Route::post('/screenshooter/create', [screenshotController::class, 'createScreenshot']);

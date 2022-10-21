@@ -51,7 +51,7 @@
         </div>
 
         <div class="p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2 mt-10 border-dashed border-2 border-white">
-        @if ($name == !null)
+        @if ($viewImage == !null)
             <img src="{{ $url }}" alt="Image can not be loaded">
             <a href="{{$url ?? '#'}}" target="_blank" class="block w-full bg-blue-500 text-white font-bold p-4 rounded mt-4 text-center">See in new tab</a>
         @else
