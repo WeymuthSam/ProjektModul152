@@ -42,6 +42,13 @@ class screenshotController extends Controller
         //Creates a new Puppeteer
         $puppeteer = new Puppeteer;
 
+        $attributes = $request->validate([
+            'url' => 'required',
+            'width' => 'required',
+            'height' => 'required',
+            'imgtype' => 'required',
+        ]);
+
         //Form data from post request
         $url = $request->input('url');
         $width = (int)$request->input('width');

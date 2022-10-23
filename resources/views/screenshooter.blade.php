@@ -26,25 +26,37 @@
                 <div class="mb-5">
                     <label for="url" class="block mb-2 font-bold text-gray-600 ">Website URL</label>
                     <input type="text" id="url" name="url" placeholder="Enter URL" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
+                    @error('url')
+                        <p class="text-red-500 text-xs mt-1">Url can not be empty!</p>
+                    @enderror
                 </div>
                 <div class="mb-5 flex justify-between">
                     <div>
                         <label for="width" class="block mb-2 font-bold text-gray-600 ">Width</label>
                         <input type="number" id="width" name="width" placeholder="Enter width" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
+                        @error('width')
+                            <p class="text-red-500 text-xs mt-1">Width can not be emptyy!</p>
+                        @enderror
                     </div> 
                     <div>
                         <label for="height" class="block mb-2 font-bold text-gray-600 ">Height</label>
                         <input type="number" id="height" name="height" placeholder="Enter height" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
+                        @error('width')
+                            <p class="text-red-500 text-xs mt-1">Height can not be empty!</p>
+                        @enderror
                     </div>
                 </div>
                 <div class="mb-5">
                      <label for="imgtype" class="block mb-2 font-bold text-gray-600 ">Image Type</label>
                      <select name="imgtype" id="imgtype" class="border border-gray-300 w-full p-3 rounded shadow sm:border-blue-500">
-                        <option value="">Choose an option</option>
+                        <option value="" default>Choose an option</option>
                         <option value="png">PNG</option>
                         <option value="jpeg">JPEG</option>
                         <option value="webp">Webp</option>
                     </select>
+                    @error('imgtype')
+                        <p class="text-red-500 text-xs mt-1">Image type can not be empty!</p>
+                    @enderror
                 </div>
                 <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded ">Take a screenshot</button>
             </form>
