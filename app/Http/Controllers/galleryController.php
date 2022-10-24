@@ -33,6 +33,8 @@ class galleryController extends Controller
         //Deletes the image from the storage
         Storage::disk('public')->delete($image);
         //Return the view
+        $request->session()->flash('success', 'Image deleted!');
+
         return redirect('/gallery');
     }
 
