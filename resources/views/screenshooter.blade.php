@@ -59,7 +59,7 @@
                     @enderror
                 </div>
                 <div>
-                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg, image/webp">
                 </div>
                 <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded ">Take a screenshot</button>
             </form>
