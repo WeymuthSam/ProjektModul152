@@ -58,6 +58,9 @@
                         <p class="text-red-500 text-xs mt-1">Image type can not be empty!</p>
                     @enderror
                 </div>
+                <div>
+                    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                </div>
                 <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded ">Take a screenshot</button>
             </form>
         </div>
