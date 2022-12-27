@@ -33,7 +33,5 @@ class screenshotController extends Controller
             Log::critical('Returning the view failed');
             abort(403);
         }
-        
     }
-
 }
